@@ -11,6 +11,7 @@
 		DA10739E2594033800EFFF4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10739D2594033800EFFF4B /* ContentView.swift */; };
 		DA1073A02594033900EFFF4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA10739F2594033900EFFF4B /* Assets.xcassets */; };
 		DA1073A32594033900EFFF4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1073A22594033900EFFF4B /* Preview Assets.xcassets */; };
+		DA1073AC2594035700EFFF4B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1073AB2594035700EFFF4B /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		DA10739F2594033900EFFF4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA1073A22594033900EFFF4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA1073A42594033900EFFF4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA1073AB2594035700EFFF4B /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				DA10739B2594033800EFFF4B /* ViewStateManagementApp.swift */,
 				DA10739D2594033800EFFF4B /* ContentView.swift */,
+				DA1073AB2594035700EFFF4B /* Task.swift */,
 				DA10739F2594033900EFFF4B /* Assets.xcassets */,
 				DA1073A42594033900EFFF4B /* Info.plist */,
 				DA1073A12594033900EFFF4B /* Preview Content */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA10739E2594033800EFFF4B /* ContentView.swift in Sources */,
+				DA1073AC2594035700EFFF4B /* Task.swift in Sources */,
 				DA10739C2594033800EFFF4B /* ViewStateManagementApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

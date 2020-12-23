@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var theTask = Task(name: "Check all windows", isComplete: false, lastCompleted: nil)
+    @StateObject private var theTask = Task(name: "Check all windows", isComplete: false, lastCompleted: nil)
     var body: some View {
         VStack {
             HStack {
@@ -17,13 +17,13 @@ struct ContentView: View {
                 Text(theTask.name)
             }
             
-            ControlPanel(theTask: self.$theTask)
+            ControlPanel(theTask: self.theTask)
         }
     }
 }
 
 struct ControlPanel: View {
-    @Binding var theTask: Task
+    @ObservedObject var theTask: Task
     
     var body: some View {
         if !theTask.isComplete {

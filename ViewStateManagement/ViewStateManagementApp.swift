@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct ViewStateManagementApp: App {
+    @StateObject private var task = Task(name: "Walk around perimeter", isComplete: false, lastCompleted: nil)
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(task)
         }
     }
 }

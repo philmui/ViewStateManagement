@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var theTask = Task(name: "Check all windows", isComplete: false, lastCompleted: nil)
+    @EnvironmentObject var theTask: Task
+    
     var body: some View {
         VStack {
             HStack {
@@ -17,13 +18,13 @@ struct ContentView: View {
                 Text(theTask.name)
             }
             
-            ControlPanel(theTask: self.theTask)
+            ControlPanel()
         }
     }
 }
 
 struct ControlPanel: View {
-    @ObservedObject var theTask: Task
+    @EnvironmentObject var theTask: Task
     
     var body: some View {
         if !theTask.isComplete {
@@ -40,8 +41,12 @@ struct ControlPanel: View {
 
 
 struct ContentView_Previews: PreviewProvider {
+    @StateObject private static var task = Task(name: "Walk around perimeter", isComplete: false, lastCompleted: nil)
+
     static var previews: some View {
-        ContentView()
+        // let previewTask = Task(name: "Check all windows", isComplete: false, lastCompleted: nil)
+        
+        ContentView().environmentObject(task)
     }
 }
 
